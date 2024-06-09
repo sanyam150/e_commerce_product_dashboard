@@ -2,9 +2,12 @@ import React, { useState } from 'react';
 import './css/LoginPage.css';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { login } from '../redux/reducers/userLoginSlice';
 
 const LoginPage = () => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   const [formData, setFormData] = useState({
     email_login: '',
     password_login: '',
@@ -37,6 +40,9 @@ const LoginPage = () => {
         email: formData.email_login,
         password: formData.password_login,
       })
+    );
+    dispatch(
+      login({ email: formData.email_login, password: formData.password_login })
     );
     navigate('/HomePage');
   };
