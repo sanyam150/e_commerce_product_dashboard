@@ -1,0 +1,9 @@
+.mt-5 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.login_form_wrapper {
+  width: 50%;
+}
