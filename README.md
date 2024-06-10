@@ -4,6 +4,7 @@
 2. When SignUp and Login, user's information stored in the `local storage`.
 3. `Redux toolkit, Bootstrap, React Testing library` is being implemented.
 4. `ProtectedRoute` has been implemented to check whether user is logged in or not.
+5. `Pagination` is also implemented
 
 ## Steps to run the application :
 
