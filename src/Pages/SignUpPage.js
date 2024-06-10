@@ -71,12 +71,15 @@ const SignUp = () => {
   return (
     <div className='container mt-5'>
       <form onSubmit={handleSignUp} style={{ width: '50%' }}>
-        <h2 className='text-center mb-4'>Sign Up</h2>
+        <h2 className='text-center mb-4' data-testId='signup-title'>
+          Sign Up
+        </h2>
         <div className='mb-3'>
-          <label htmlFor='email' className='form-label'>
+          <label htmlFor='emailSignup' className='form-label'>
             Email address
           </label>
           <input
+            data-testId='signup-email-label'
             type='email'
             className='form-control'
             id='emailSignup'
@@ -87,10 +90,11 @@ const SignUp = () => {
           />
         </div>
         <div className='mb-3'>
-          <label htmlFor='password' className='form-label'>
+          <label htmlFor='passwordSignup' className='form-label'>
             Password
           </label>
           <input
+            data-testId='signup-password-label'
             type='password'
             className='form-control'
             id='passwordSignup'
@@ -101,10 +105,11 @@ const SignUp = () => {
           />
         </div>
         <div className='mb-3'>
-          <label htmlFor='confirmPassword' className='form-label'>
+          <label htmlFor='confirmPasswordSignup' className='form-label'>
             Confirm Password
           </label>
           <input
+            data-testId='signup-confirmPassword-label'
             type='password'
             className='form-control'
             id='confirmPasswordSignup'
